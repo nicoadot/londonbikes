@@ -20,4 +20,6 @@ Route::get('saludar/{nombre}/{apellido}', function ($nombre,$apellido) {
 });
 
 //Route::get('la ruta que invoco', 'controlador@action');
-Route::get('bienvenido', 'HomeController@index');
+Route::get('home', 'HomeController@index');
+
+Route::get('login', 'LoginController@login');
