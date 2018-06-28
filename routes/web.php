@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome')->name('inicio');
 });
 
 Route::get('saludar/{nombre}/{apellido}', function ($nombre,$apellido) {
@@ -23,3 +23,7 @@ Route::get('saludar/{nombre}/{apellido}', function ($nombre,$apellido) {
 Route::get('home', 'HomeController@index');
 
 Route::get('login', 'LoginController@login');
+Route::get('nosotros', 'NosotrosController@controlLogin');
+Route::get('market', 'MarketController@controlLogin');
+Route::get('datosPersonales', 'DatosPersonalesController@datosPersonales');
+Route::get('productos', 'ProductosController@listarProductos');
