@@ -15,15 +15,12 @@
     <div class="box alt">
       <div class="row 50% uniform">
         <div class="12u$"><span class="imagen fit"><img src="imagenes/wall3.jpg" alt="" /></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI1.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI2.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI3.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI4.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI5.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI6.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI7.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI8.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
-        <div class="contenedor"><span class="imagen fit"><img src="imagenes/BICI9.jpg" alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>
+        <?php
+         foreach ($productos as $producto)
+         {
+           echo('<div class="contenedor"><span class="imagen fit"><img src="imagenes/'.$producto['Imagen'].'"'.'alt="" /><ul class="mas centrado"><li><a href="#" class="boton alt">AGREGAR</a></li></ul></span></div>');
+         }
+         ?>
       </div>
     </div>
     </section>

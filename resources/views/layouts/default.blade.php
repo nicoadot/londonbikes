@@ -16,6 +16,7 @@
           <a href="{{url('/home')}}" style="text-decoration:underline">Home</a>
           <a href="{{url('/nosotros')}}">Nosotros</a>
           <a href="{{url('/market')}}">Market</a>
+          <a href="{{url('/login')}}">Acceder</a>
         </nav>
         <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
       </div>
@@ -27,6 +28,11 @@
     </section>
      <section id="footer">
        <div class="angosto" style="top:0">
+         <div class="" style="margin:0 auto">
+           <ul>
+             <li align="center"><a> F.A.Q.</a></li>
+           </ul>
+         </div>
          <div class="" style="margin:0 auto">
            <ul class="icons" align="center">
              <li><a href="https://twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>

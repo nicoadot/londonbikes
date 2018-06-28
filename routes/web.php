@@ -24,6 +24,9 @@ Route::get('home', 'HomeController@index');
 
 Route::get('login', 'LoginController@login');
 Route::get('nosotros', 'NosotrosController@controlLogin');
-Route::get('market', 'MarketController@controlLogin');
+Route::get('market', 'MarketController@listarProductos');
 Route::get('datosPersonales', 'DatosPersonalesController@datosPersonales');
+Route::post('datosPersonales', 'DatosPersonalesController@update');
 Route::get('productos', 'ProductosController@listarProductos');
+Route::get('registro', 'RegistroController@registro');
+Route::post('registro', 'RegistroController@registrar');

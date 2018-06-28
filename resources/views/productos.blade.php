@@ -1,8 +1,4 @@
-<?php
-echo('<ul>');
-foreach ($productos as $producto) {
-  echo('<li>'.$producto['Descripcion'].'</li>');
-}
-echo('</ul>');
-
- ?>
+@extends ('layouts.default')
+@section('title')
+  {{'Productos'}}
+@endsection
