@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
     <link rel="" href="/css/font-awesome.min.css">
     <title>London Bikes - @yield('title')</title>
   </head>
@@ -30,7 +31,7 @@
        <div class="angosto" style="top:0">
          <div class="" style="margin:0 auto">
            <ul>
-             <li align="center"><a> F.A.Q.</a></li>
+             <li align="center"><a href="{{url('/preguntasFrecuentes')}}"> F.A.Q.</a></li>
            </ul>
          </div>
          <div class="" style="margin:0 auto">

@@ -11,7 +11,7 @@ class MarketController extends Controller
     }
 
     public function listarProductos(){
-      $productos = Producto::all();
+      $productos = Producto::paginate(6);
       $view = view('market');
       return $view->with('productos',$productos);
     }
