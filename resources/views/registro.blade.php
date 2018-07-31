@@ -15,19 +15,19 @@
         <div class="">
           <div class="campo medio primero">
             <label for="name">Nombre</label>
-            <input type="text" name="nombre" id="nombre"  value="" />
+            <input type="text" name="nombre" id="nombre"  value="" required/>
           </div>
           <div class="campo medio">
             <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido"  value="" />
+            <input type="text" name="apellido" id="apellido"  value=""  required />
           </div>
           <div class="campo medio primero">
             <label for="mail">Mail</label>
-            <input type="text" name="mail" id="mail" placeholder="juan@dominio.com.ar"  value="" />
+            <input type="text" name="mail" id="mail" placeholder="juan@dominio.com.ar"  value="" required />
           </div>
           <div class="campo medio">
               <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Debe tener al menos 8 caracteres alfanumericos" />
+            <input type="password" name="password" id="password" placeholder="Debe tener al menos 8 caracteres alfanumericos" required />
           </div>
         </div>
         <div style="display: block">

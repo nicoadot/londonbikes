@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.defaultBS')
 @section('title')
   {{'F.A.Q.'}}
 @endsection
@@ -8,38 +8,24 @@
     <header class="">
       <h1>Preguntas Frecuentes!</h1>
     </header>
-    <p>
-      <strong>
-          * Cómo puedo averiguar el precio de una bicicleta?
-      </strong>
-    </p>
-    <p>
-      Podes contactarnos via mail ventas@londonbikes.com o registrandote en el sitio, accediendo al Market!
-    </p>
-    <p>
-      <strong>
-          * Hacen envios?
-      </strong>
-    </p>
-    <p>
-      Si! A todo el pais! Las tarifas se comunican al realizar la compra.
-    </p>
-    <p>
-      <strong>
-          * Brindan asesoramiento?
-      </strong>
-    </p>
-    <p>
-      Si! Contamos con un personal dispuesto a respoder todas tus consultas y
-      lograr que des con la bicicleta que estas buscando.
-    </p>
-    <p>
-      <strong>
-          * Las bicicletas cuentan con garantia?
-      </strong>
-    </p>
-    <p>
-      Si! Todos nuestros productos tienen garantia oficial.
-    </p>
+    <div id="accordion">
+      <h3>Cómo puedo averiguar el precio de una bicicleta?</h3>
+      <div>
+        <p>Podes contactarnos vía mail ventas@londonbikes.com o registrandote en el sitio y accediendo al Market!</p>
+      </div>
+      <h3> Hacen envíos?</h3>
+      <div>
+        <p>Si! A todo el pais! Las tarifas se comunican al realizar la compra. </p>
+      </div>
+      <h3>Brindan asesoramiento?</h3>
+      <div>
+      <p>Si! Contamos con un personal dispuesto a respoder todas tus consultas y
+      lograr que des con la bicicleta que estas buscando.</p>
+      </div>
+      <h3>Las bicicletas cuentan con garantía?</h3>
+      <div>
+        <p>Si! Todos nuestros productos tienen garantía oficial por 2 años.</p>
+      </div>
+    </div>
   </div>
 </section>

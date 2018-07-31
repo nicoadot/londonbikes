@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/css/styles.css" />
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="" href="/css/font-awesome.min.css">
     <title>London Bikes - @yield('title')</title>
   </head>
@@ -19,9 +20,10 @@
           <a href="{{url('/market')}}">Market</a>
           <a href="{{url('/login')}}">Acceder</a>
         </nav>
-        <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
       </div>
     </header>
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
     <section >
       <div class="angosto">
           @yield('contenido')

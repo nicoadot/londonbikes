@@ -6,10 +6,15 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-  public function index(Request $request)
-  {
-    $view = view('home');
-    return $view;
-  }
-    //metodo debe ser public
+    /**
+     * Create a new controller instance.
+     *
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        return view('home2');
+    }
 }
