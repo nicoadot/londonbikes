@@ -10,9 +10,12 @@
       <h1>Registro</h1>
     </header>
     <div class="angosto">
-      <form class="" action="registro.php" method="post">
+      <form class="" action="registro.php" method="post" id="formRegistro">
         {{csrf_field()}}
         <div class="">
+          <div class="campo medio primero danger" style="">
+            <label for="name">Errores</label>
+          </div>
           <div class="campo medio primero">
             <label for="name">Nombre</label>
             <input type="text" name="nombre" id="nombre"  value="" required/>
@@ -36,4 +39,6 @@
       </form>
     </div>
   </div>
+  <script src="/js/validadorRegistro.js">
+  </script>
 </section>

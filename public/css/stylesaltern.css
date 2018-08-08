@@ -7,7 +7,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background-color: #fff;
+  background-color: #C0C0C0;
   color: #111111;
 }
 body {
@@ -81,19 +81,19 @@ h6 {
   font-size: 0.7em;
 }
 input, select, textarea {
-  color: #B33C3F;
+  color: #008080;
 }
 
 a {
-  color: #B33C3F;
+  color: #008080;
 }
 
 strong, b {
-  color: #B33C3F;
+  color: #008080;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #B33C3F;
+  color: #008080;
 }
 
 .box {
@@ -178,7 +178,7 @@ button,
   padding: 0;
   position: absolute;
   top: 0;
-  color: #B33C3F;
+  color: #008080;
   font-size: 1.75em;
   text-transform: none;
   font-weight: normal;
@@ -220,10 +220,10 @@ button,
 
 
 .registro{
-  background-color: #B33C3F;
+  background-color: #008080;
   color: #f2a3a5;
   padding: 4em 0 2em 0;
-  background: #B33C3F;
+  background: #008080;
 }
 
 
@@ -305,7 +305,7 @@ button,
 #banner button.special,
 #banner .boton.special {
 background-color: #ffffff;
-color: #B33C3F !important;
+color: #008080 !important;
 }
 
 .icon {
@@ -402,8 +402,8 @@ input[type="button"].alt,
 button.alt,
 .boton.alt {
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #B33C3F;
-  color: #B33C3F !important;
+  box-shadow: inset 0 0 0 2px #008080;
+  color: #008080 !important;
 }
 
 input[type="button"].alt:hover,
@@ -427,7 +427,7 @@ button.alt.icon:before,
 input[type="button"].special,
 button.special,
 .boton.special {
-  background-color: #B33C3F;
+  background-color: #008080;
   color: #ffffff !important;
 }
 
@@ -739,7 +739,7 @@ hr.major {
 }
 
 .footer-distributed h3 span{
-	color:  #B33C3F;
+	color:  #008080;
 }
 
 /* Footer links */
@@ -758,7 +758,7 @@ hr.major {
 }
 
 .footer-distributed .footer-company-name{
-	color:  #B33C3F;
+	color:  #008080;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -803,7 +803,7 @@ hr.major {
 }
 
 .footer-distributed .footer-center p a{
-	color:  #B33C3F;
+	color:  #008080;
 	text-decoration: none;;
 }
 
@@ -873,8 +873,6 @@ hr.major {
 	}
 
 }
-
-
 
 
 /* MEDIA QUERIES */
@@ -1119,7 +1117,7 @@ padding: 0;
 }
 
 #footer .copyright a {
-  color: #B33C3F;
+  color: #008080;
 }
 
 @media screen and (max-width: 980px) {

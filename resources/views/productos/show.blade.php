@@ -14,7 +14,7 @@
                       <input name="_method" type="hidden" value="DELETE">
                       <div class="form-group row" style="margin:0 auto;padding-bottom:20px">
                           <div class="col-md8"  style="margin:0 auto">
-                            <img style="align:center" width="200px" src="<?php echo asset("storage/productos/$producto->avatar")?>">
+                            <img style="align:center" width="200px"  src="<?php echo asset("storage/productos/$producto->avatar")?>">
                           </div>
                       </div>
                       <div class="form-group row">

@@ -10,7 +10,7 @@
                 <div class="card-header">{{ __('Editar Producto') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('productos.update', $producto->id)}}">
+                    <form method="POST" action="{{ route('productos.update', $producto->id)}}" enctype="multipart/form-data">
                         @csrf
                         {{ method_field('PATCH') }}
                         <div class="form-group row">
@@ -54,7 +54,7 @@
                             <label  class="col-md-4 col-form-label text-md-right">{{ __('Imagen') }}</label>
 
                             <div class="col-md-6">
-                              <input type="text" name="avatar" value="{{$producto->avatar}}">
+                              <input type="file" name="avatar" value="">
                             </div>
                         </div>
 

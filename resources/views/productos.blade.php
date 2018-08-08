@@ -10,7 +10,7 @@
     <div class="col-8" style="margin:0 auto">
       <div class="list-group angosto">
         @foreach ($productos as $producto)
-          <a  href="{{ route('productos.show', $producto->id)}}" class="list-group-item">{{$producto->descripcion}}<img style="float:right" width="70px" src="<?php echo asset("storage/productos/$producto->avatar")?>"></a>
+          <a  href="{{ route('productos.show', $producto->id)}}" class="list-group-item">{{$producto->descripcion}}<img style="float:right" width="70px"  src="<?php echo asset("storage/productos/$producto->avatar")?>"></a>
         @endforeach
         <div class="form-group row mb-0" style="margin-top:10px">
             <div class="col-md-6 offset-md-4">

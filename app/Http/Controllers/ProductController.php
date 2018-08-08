@@ -7,6 +7,7 @@ use  App\Models\Producto;
 use  App\Models\Categoria;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
@@ -41,11 +42,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //   'descripcion' => 'required|max:255',
-        //   'preciounitario' => 'required|integer|min:0',
-        //   'avatar' => 'required|max:255',
-        // ]);
+
+        $this->validate($request, [
+          'descripcion' => 'required|max:255',
+          'preciounitario' => 'required|integer|min:0',
+          'avatar' => 'required|max:255',
+       ]);
 
         $producto = new Producto;
         $producto->descripcion = $request->input('descripcion');
@@ -95,11 +97,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-          'descripcion' => 'required|max:255',
-          'preciounitario' => 'required|integer|min:0',
-          'avatar' => 'required|max:255',
-        ]);
+        $this->validate($request, [
+            'descripcion' => 'required|max:255',
+            'preciounitario' => 'required|integer|min:0',
+            'avatar' => 'required|max:255',
+          ]);
 
         $folder = "productos";
         $file = $request->file("avatar");

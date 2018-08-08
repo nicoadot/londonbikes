@@ -27,6 +27,19 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Apellido') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="lastname" type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" name="lastname" value="{{  Auth::user()->lastname }}" required autofocus>
+
+                                @if ($errors->has('lastname'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('lastname') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Mail') }}</label>
