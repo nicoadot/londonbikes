@@ -1,5 +1,3 @@
-window.onload = function(){
-
   var span = document.getElementById('spanUsuarios');
 
   setInterval(function(){
@@ -12,4 +10,3 @@ window.onload = function(){
       console.log(error);
     });
   }, 3000);
-}

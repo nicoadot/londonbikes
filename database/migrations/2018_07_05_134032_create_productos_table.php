@@ -29,6 +29,27 @@ class CreateProductosTable extends Migration
         'avatar' =>'BICI1.JPG',
        ]
      );
+     DB::table('productos')->insert(
+    ['descripcion' => 'Plegable2018',
+     'preciounitario' => 12000,
+     'idcategoria'=> 1,
+     'avatar' =>'BICI9.JPG',
+    ]
+    );
+      DB::table('productos')->insert(
+     ['descripcion' => 'ModelX2018',
+      'preciounitario' => 12000,
+      'idcategoria'=> 2,
+      'avatar' =>'BICI4.jpg',
+     ]
+    );
+    DB::table('productos')->insert(
+    ['descripcion' => 'ModelY2018',
+    'preciounitario' => 12000,
+    'idcategoria'=> 2,
+    'avatar' =>'BICI8.JPG',
+    ]
+    );
     }
 
     /**

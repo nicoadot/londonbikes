@@ -44,7 +44,5 @@
     <strong><p>	www.pleopleforbikes.org</p></strong>
     <p>Proporcionamos un frente unificado para la defensa de ciclismo a nivel nacional, un centro estratégico para asegurar la colaboración entre cada pieza en el movimiento de andar en bicicleta, y la capacidad de soportar los esfuerzos locales a través de nuestros recursos financieros, la comunidad y la comunicación.</p>
   </div>
-  <script src="/js/last.js">
-
-  </script>
+  <script src="/js/last.js"></script>
 </section>
